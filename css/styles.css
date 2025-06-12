@@ -1,0 +1,16 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-btn {
+  background-color: #6f42c1;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #5a32a3;
+}
