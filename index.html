@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Design Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
 
-  <div class="container text-center mt-5">
-    <h1>Welcome to My Design Website</h1>
-    <p class="lead">Simple. Clean. Bootstrap-powered.</p>
-    
-    <button class="btn btn-primary custom-btn" id="actionBtn">Click Me</button>
-  </div>
+    <!-- Background video -->
+    <video autoplay muted loop id="bgVideo">
+      <source src="assets/video/first.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  <script src="js/styles.js"></script>
-</body>
+    <!-- Overlay content -->
+    <div class="overlay d-flex align-items-center">
+      <div class="container-fluid text-start text-white">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <h1 class="display-4 fw-bold">ONE TAP ORDER <br> FOR OUTFIT</h1>
+            <p class="fs-4">We are opening soon</p>
+
+            <form class="d-flex flex-column flex-sm-row gap-2 mt-3" onsubmit="event.preventDefault()">
+              <input type="email" class="form-control w-sm-100" placeholder="Enter your email" required>
+              <button class="btn btn-custom-light w-sm-100">Notify Me</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="js/styles.js"></script>
+  </body>
 </html>

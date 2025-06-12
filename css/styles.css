@@ -3,14 +3,72 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.custom-btn {
-  background-color: #6f42c1;
+.form-control {
+  background-color: #f2eee18f;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-control:hover,
+.form-control:focus {
+  background-color: #F2EEE1;
+  color: #1A1B19;
+}
+
+.form-control::placeholder {
+  color: #1a1b19a7;
+}
+
+.btn-custom-light {
+  background-color: #f2eee18f;
   border: none;
-  padding: 12px 24px;
-  font-size: 18px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1b19a7;
+}
+
+.btn-custom-light:hover {
+  background-color: #F2EEE1;
+  color: #1A1B19;
   transition: background-color 0.3s ease;
 }
 
-.custom-btn:hover {
-  background-color: #5a32a3;
+/* Make video full width and height */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay text container */
+.overlay {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  padding-left: 5%;
+}
+
+/* Responsive form styling */
+input.form-control {
+  max-width: 300px;
+}
+
+button.btn {
+  white-space: nowrap;
+}
+
+/* Media Queries */
+
+@media (max-width: 575.98px) {
+  input.form-control {
+    max-width: 100%;
+  }
 }
